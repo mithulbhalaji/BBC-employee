@@ -1,0 +1,29 @@
+<div>
+    <input #customerId type="number" placeholder="Enter customer ID">
+    <button (click) = onSubmit(customerId.value)>Enter</button>
+
+    <div>
+        <table>
+            <thead>
+              <tr>
+                <th>Payment ID</th>
+                <th>Customer Invoice ID</th>
+                <th>Customer ID</th>
+                <th>Payment Date</th>
+                <th>Price</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let payment of payments">
+                <td>{{ payment.paymentId }}</td>
+                <td>{{ payment.customerInvoiceId }}</td>
+                <td>{{ payment.customerId }}</td>
+                <td>{{ payment.paymentDate }}</td>
+                <td>{{ payment.price }}</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    
+      
+</div>

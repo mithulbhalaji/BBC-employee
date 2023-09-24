@@ -1,0 +1,19 @@
+<div>
+    <input #customerId type="number" placeholder="Enter Customer ID">
+    <input #startDate type="date" placeholder="Enter start date">
+    <input #endDate type="date" placeholder="Enter end date">
+    <input #unitConsumed type="number" placeholder="Enter unit consumed">
+    <input #customerName type="text" placeholder="Enter Customer name">
+    <input #customerEmail type="email" placeholder="Enter Customer email">
+    <input #customerTelephoneNumber type="text" placeholder="Enter Customer number">
+    <button (click)="onSubmit(customerId.value,
+    startDate.value, 
+    endDate.value,  
+    unitConsumed.value,
+    customerName.value,
+     customerEmail.value,
+     customerTelephoneNumber.value)">Submit</button>
+
+    {{responseMessage}}
+
+</div>

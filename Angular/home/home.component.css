@@ -1,0 +1,23 @@
+/* Style for the container div */
+div {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  /* Style for the navigation links */
+  a {
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    color: #007bff; /* Blue color */
+    padding: 10px;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  /* Hover effect for links */
+  a:hover {
+    background-color: #007bff; /* Blue color on hover */
+    color: #fff; /* White text color on hover */
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  

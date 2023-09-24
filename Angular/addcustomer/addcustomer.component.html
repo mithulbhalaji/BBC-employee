@@ -1,0 +1,9 @@
+<div>
+    <input #customerName type="text" placeholder="Enter customer name"> <br><br>
+    <input #customerEmail type="email" placeholder="Enter customer mail"> <br><br>
+    <input #customerTelephoneNumber type="text" placeholder="Enter customer number"> <br><br>
+    <button (click)="onSubmit(customerName.value,
+    customerEmail.value, 
+    customerTelephoneNumber.value)">Submit</button> <br><br>
+    {{responseMessage}}
+</div>

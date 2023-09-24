@@ -1,0 +1,21 @@
+<div>
+    <label>Employee Login</label>
+<br><br>
+    <input #employeeId type="number" placeholder="Enter your Employee ID">
+    <br><br>
+    <button (click) = "onGenerateOTP(employeeId.value)" >Generate OTP</button>
+    <br><br>
+    {{sentMessage}}
+    {{otpMessage}}
+    <br><br>
+
+    <div [hidden] = "isCheckButtonHidden">
+        <input #otp type = "number" placeholder="Enter your OTP">
+        <br><br>
+        <button (click)="checkOTP(otp.value)" >Check</button>
+        <br><br>
+    </div>
+    
+
+
+</div>
